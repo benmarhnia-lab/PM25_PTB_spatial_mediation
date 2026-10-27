@@ -11,11 +11,12 @@ library("GWmodel")
 
 ### Spatial mediation analysis
 
+data.all <- readRDS("CA_data_PTB_mediation.RDS")
+
 ## 1. mediator variables
 # full-pregnancy period and trimester-specific PM2.5 concentration)
 
 mediator.vars <- c("pm25_lmp_full", "pm25_lmp_t1", "pm25_lmp_t2", "pm25_lmp_t3")
-
 
 ## 2. function to extract estimates
 get.coef <- function(model, column, n, expected.cols) {

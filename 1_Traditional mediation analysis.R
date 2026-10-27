@@ -11,6 +11,8 @@ library("GWmodel")
 
 ### Traditional mediation analysis
 
+data.all <- readRDS("CA_data_PTB_mediation.RDS")
+
 ## 1. mediator variables
 # full-pregnancy period and trimester-specific PM2.5 concentration)
 
